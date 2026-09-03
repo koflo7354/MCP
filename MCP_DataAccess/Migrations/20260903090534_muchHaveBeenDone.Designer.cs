@@ -3,6 +3,7 @@ using System;
 using MCP_DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MCP_DataAccess.Migrations
 {
     [DbContext(typeof(ScootDbContext))]
-    partial class ScootDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260903090534_muchHaveBeenDone")]
+    partial class muchHaveBeenDone
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

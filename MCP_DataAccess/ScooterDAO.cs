@@ -49,13 +49,26 @@ namespace MCP_DataAccess
             db.SaveChanges();
             return user.Id;
         }
+        public int CreateScooter (Scooter scooter)
+        {
+            using ScootDbContext db = new();
+            db.Scooter.Add(scooter);
+            db.SaveChanges ();
+            return scooter.Id;
+        }
+        public int CreateTrip(Trip trip)
+        {
+            using ScootDbContext db = new();
+            db.Trip.Add(trip);
+            db.SaveChanges();
+            return trip.Id;
+        }
         public void RebuildDatabase()
         {
             using ScootDbContext db = new();
 
             db.Database.EnsureDeleted();
             db.Database.Migrate();
-
         }
     }
 }

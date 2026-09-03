@@ -12,8 +12,14 @@ namespace MCP_Domain.Models
         public int Distance { get; set; }
         public int Cost { get; set; }
         public int App_UserId { get; set; }
-        public App_User user { get; set; }
+        public App_User User { get; set; }
         public int ScooterId { get; set; }
-        public Scooter scooter { get; set; }
+        public Scooter Scooter { get; set; }
+        public Trip() { }
+        public Trip (int userId, int scooterId)
+        {
+            App_UserId = userId;
+            ScooterId = scooterId;
+        }
     }
 }

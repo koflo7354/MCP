@@ -10,6 +10,8 @@ namespace MCP_DataAccess
         List<Trip> EveryFinishedTrips();
         void RebuildDatabase();
         int CreateUser(App_User user);
+        int CreateScooter(Scooter scooter);
+        int CreateTrip(Trip trip);
 
 
     }

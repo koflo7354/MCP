@@ -32,5 +32,16 @@ namespace MCP.BuisnessLayer
             App_User user = new App_User(name);
             return scooterDAO.CreateUser(user);
         }
+        public int CreatesScooter(string brand)
+        {
+            Scooter scooter = new Scooter(brand);
+            return scooterDAO.CreateScooter(scooter);
+        }
+        public int CreateTrip (App_User user, Scooter scooter)
+        {
+            Trip trip = new(user.Id, scooter.Id);
+            return scooterDAO.CreateTrip(trip);
+        }
     }
+
 }

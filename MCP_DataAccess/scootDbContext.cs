@@ -21,6 +21,12 @@ namespace MCP_DataAccess
             .UseLowerCaseNamingConvention();
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<UserOnScooter>()
+                .HasKey(s => new { s.ScooterId, s.App_UserId });
+        }
+
 
     }
 }
