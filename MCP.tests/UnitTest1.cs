@@ -35,9 +35,9 @@ namespace MCP.tests
             int result = bl.CreateUser(name);
             Assert.That(result, Is.EqualTo(expectedId));
         }
-        [TestCase("Vespa",2)]
-        [TestCase("Voi",3)]
-        [TestCase("Oola",4)]
+        [TestCase("Vespa", 2)]
+        [TestCase("Voi", 3)]
+        [TestCase("Oola", 4)]
         public void CreateScooters_ThreeScooters_CorrectIdOnScoot(string brand, int expectedId)
         {
             int result = bl.CreatesScooter(brand);
