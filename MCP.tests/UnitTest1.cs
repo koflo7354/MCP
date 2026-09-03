@@ -51,5 +51,28 @@ namespace MCP.tests
 
             Assert.That (result, Is.EqualTo(expectedId));
         }
+        //[Test]
+        //public void AllScootersWithBatter_TwoScooters_correctList()
+        //{
+        //    Scooter scoot1 = new("vespa");
+        //    scoot1.Battery_Capacity = 0.4;
+        //    dao.CreateScooter(scoot1);
+
+        //    Scooter scoot2 = new("Voi");
+        //    scoot2.Battery_Capacity = 0.8;
+        //    dao.CreateScooter(scoot2);
+
+        //    Scooter scoot3 = new("Voi");
+        //    scoot2.Battery_Capacity = 0.1;
+        //    dao.CreateScooter(scoot3);
+
+        //    List<Scooter> expectedList = new();
+        //    expectedList.Add(scoot1);
+        //    expectedList.Add(scoot2);
+
+        //    List<Scooter> result = dao.ScootersWithBatter();
+
+        //    Assert.That(result, Is.EqualTo(expectedList));
+        //}
     }
 }
