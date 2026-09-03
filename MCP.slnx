@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="MCP_DataAccess/MCP_DataAccess.csproj" />
   <Project Path="MCP_Domain/MCP_Domain.csproj" />
 </Solution>
