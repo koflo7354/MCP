@@ -1,5 +1,7 @@
 <Solution>
   <Project Path="MCP.App/MCP.App.csproj" />
+  <Project Path="MCP.BuisnessLayer/MCP.BuisnessLayer.csproj" />
+  <Project Path="MCP.tests/MCP.tests.csproj" />
   <Project Path="MCP_DataAccess/MCP_DataAccess.csproj" />
   <Project Path="MCP_Domain/MCP_Domain.csproj" />
 </Solution>

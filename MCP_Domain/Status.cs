@@ -6,5 +6,8 @@ namespace MCP_Domain
 {
     public enum Status
     {
+        not_started,
+        ongoing,
+        finished
     }
 }
